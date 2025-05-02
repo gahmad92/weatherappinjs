@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <div class="card search-card">
+      <input type="text" placeholder="Enter city name" class="jhelo" />
+      <button type="button" class="search-btn">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+
+    <div class="card main-weather">
+      <img src="images/clouds.png" class="weather-icon" alt="Weather Icon" />
+      <h1 class="temp">--°C</h1>
+      <h2 class="city">City Name</h2>
+      <p class="condition">Condition - Description</p>
+    </div>
+
+    <div class="grid-container">
+      <div class="info-card">
+        <img src="images/humidity.png" alt="" />
+        <p class="label">Humidity</p>
+        <p class="humidity">--%</p>
+      </div>
+      <div class="info-card">
+        <img src="images/wind.png" alt="" />
+        <p class="label">Wind</p>
+        <p class="wind">-- km/h</p>
+      </div>
+      <div class="info-card">
+        <img src="images/pressure.png" alt="" />
+        <p class="label">Pressure</p>
+        <p class="pressure">-- hPa</p>
+      </div>
+      <div class="info-card">
+        <img src="images/visibility.png" alt="" />
+        <p class="label">Visibility</p>
+        <p class="visibility">-- km</p>
+      </div>
+      <div class="info-card lat-lon"></div>
+      <div class="info-card feels-like"></div>
+      <div class="info-card temp-range"></div>
+      <div class="info-card clouds"></div>
+      <div class="info-card timezone"></div>
+      <div class="info-card sun-times"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
